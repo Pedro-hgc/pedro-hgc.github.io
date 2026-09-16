@@ -1,58 +1,113 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Sobre mim</title>
     <style>
-        body{
-            margin: 40px;
-            font-family:Arial;
-            background-color:#e3deb9;
-        }
-        .container{
-            padding: 20px;
-            color: rgb(59, 195, 29);
-            background-color: #3d0dcd;
-            border-radius:10px;
-        }
-        .container-custom{
-            margin-top: 20px;
-        }
+     
+ 
         #nome-custom{
             font-weight: bold;
+            font-size: 50px;
             text-align: center;
+            color: rgb(100, 74, 202);
         }
-        .foto {
-            width: 200px;
-            border-radius: 50%;
-            border: 3px solid #2c3e50;
-            padding: 5px;
-            display: block;
-            margin: auto;
+    
+        button {
+            background-color: #18bf1e; /* Green */
+            border-radius: 12px;
+            border: none;
+            color: rgb(23, 37, 195);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
         }
     </style>
 </head>
 
-<body style= margin:40px; font-family:Arial;>
-    <h1>Sobre mim</h1>
-    <img src="https://github.com/Pedro-hgc.png" 
-         alt="Foto de perfil" 
-         class="foto">
+<body class="bg-gray-100 font-sans p-10">
+    <h1 class="text-3xl text-center font-bold text-slate-700">Sobre mim</h1>
+    <h2 class="text-2xl font-semibold text-slate-700">Olá meu nome é Pedro Henrique Gomes de Campos</h2>
+    <h3>Sou aluno do curso de Ciência da Computação na UFOP</h3>
+    <h4>Estou atualmente no 6º período, com previsão de formatura em Dez/2027</h4>
+    <img
+        src="foto.jpg"
+        class="w-48 rounded-full border-4 border-slate-700 p-1 mx-auto"
+    >
     <p id="nome-custom">Meu nome é Pedro Campos</p>
-    
-    <h2>Meus interesses</h2>
-    <ul>
-        <li>Programação</li>
-        <li>Banco de Dados</li>
-        <li>Geoprocessamento</li>
+    <h2>Formação Acadêmica</h2>
+    <ul class="bg-slate-100 p-4 rounded-lg">
+        <li class="hover:text-red-500">Ciência da Computação       – Universidade Federal de Ouro Preto (UFOP) Previsão de formatura: Dez/2027</li>
+        <li class="hover:text-red-500">Sistemas para Internet      – Faculdade Pitágoras Concluído: Dez/2025</li>
+        <li class="hover:text-red-500">Administração de Empresas       – Universidade FUMEC Concluído: Dez/2012</li>
     </ul>
-    <div class="container container-custom">
-        Contato 31-998276626
+    <h2>Meus interesses</h2>
+    <ul class="bg-slate-100 p-4 rounded-lg">
+        <li class="hover:text-red-500">Programação com a sofia</li>
+        <li class="hover:text-red-500">Banco de Dados</li>
+        <li class="hover:text-red-500">Geoprocessamento</li>
+        <li class="hover:text-red-500">Desenvolvimento WEB</li>
+        <li class="hover:text-red-500">Gestão de Projetos</li>
+    </ul>
+    <h2>Experiências Profissionais</h2>
+    <ol class="bg-slate-100 p-4 rounded-lg">        
+        <li class="hover:text-red-500">Atividades Empreendedoras Autônomas (Restaurante e Lanchonete)
+            <ul>
+                <li class="hover:text-red-500">Gestão integral, administrativa e financeira do modelo de negócios em ramo alimentício, englobando liderança
+                    direta de equipes e atendimento ao público em escala
+                </li>
+                <li>Planejamento de compras operacionais, coordenação de estoques e ampla negociação com
+                    fornecedores 
+                </li>
+                <li class="hover:text-red-500">Responsabilidade sobre rotinas fiscais e controle rigoroso de fluxos de caixa e conciliação de contas </li>        
+            </ul>
+        </li>
+        <p> </p>
+        <li class="hover:text-red-500">Barão Bebidas
+            <ul>
+                <li class="hover:text-red-500">Gestão de relacionamento comercial direto com carteiras ativas de clientes corporativos e fornecedores do
+                    setor.
+                </li>
+                <li>
+                    Processamento técnico de faturamento, emissão de ordens de vendas, notas fiscais e documentos de
+                    cobrança bancária.
+                </li>
+                <li class="hover:text-red-500">Supervisão de pós-venda e execução de estratégias de prospecção comercial.
+                </li>
+            </ul>
+            <p> </p>
+        <li class="hover:text-red-500">Doutor dos Fogões
+            <ul>
+                <li>
+                    Recebimento de ordens de serviços, classificação técnica de prioridades e distribuição/supervisão de
+                    demandas para equipes de campo.
+                </li>
+                <li class="hover:text-red-500">
+                    Atendimento especializado ao cliente focado em pós-venda, mediação de conflitos e resoluções de termos de
+                    garantia.
+                </li>
+                <li class="hover:text-red-500">
+                    Gestão de estoque corporativo, controle de fluxos de caixa internos e vendas corporativas directas no setor de
+                    seminovos    
+                </li>
+            </ul>
+        </li>
+        </li>
+    </ol>
+   <div class="bg-white p-6 rounded-xl">
+        <button class="button" link="https://wa.me/5531998276626">Contato 31-998276626</button>
+               
     </div>
-    <div class="container">
-        E-mail: pedro.hgc@aluno.ufio.edu.br
+    <div class="bg-white p-6 rounded-xl">
+        <button link="mailto:pedro.hgc@aluno.ufio.edu.br">E-mail</button>
     </div>
-    <div class="container container-custom">
+    <div class="bg-white p-6 rounded-xl">
         Endereço: Ouro Preto, MG
     </div>
 
